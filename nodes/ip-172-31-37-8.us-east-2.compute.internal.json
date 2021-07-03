@@ -23,7 +23,7 @@
       },
       "waiver_file": null,
       "json_file": {
-        "location": "/var/chef/compliance_reports/compliance-20210702092309.json"
+        "location": "/var/chef/compliance_reports/compliance-20210703151254.json"
       },
       "run_time_limit": 1.0,
       "result_message_limit": 10000,
@@ -90,13 +90,13 @@
           "size": "20480",
           "refcount": "1"
         },
-        "mousedev": {
-          "size": "24576",
-          "refcount": "0"
-        },
         "crypto_simd": {
           "size": "16384",
           "refcount": "1"
+        },
+        "mousedev": {
+          "size": "24576",
+          "refcount": "0"
         },
         "glue_helper": {
           "size": "16384",
@@ -163,7 +163,7 @@
         },
         "ipv6": {
           "size": "528384",
-          "refcount": "97"
+          "refcount": "59"
         },
         "crc_ccitt": {
           "size": "16384",
@@ -188,28 +188,28 @@
         "surplus": "0"
       },
       "directmap": {
-        "4k": "53248kB",
-        "2M": "995328kB"
+        "4k": "61440kB",
+        "2M": "987136kB"
       },
       "total": "1006892kB",
-      "free": "372224kB",
-      "available": "704540kB",
+      "free": "592228kB",
+      "available": "704600kB",
       "buffers": "2088kB",
-      "cached": "436508kB",
-      "active": "288904kB",
-      "inactive": "256220kB",
-      "dirty": "1620kB",
+      "cached": "221536kB",
+      "active": "235132kB",
+      "inactive": "95672kB",
+      "dirty": "212kB",
       "writeback": "0kB",
-      "anon_pages": "106536kB",
-      "mapped": "62596kB",
-      "slab": "52368kB",
-      "slab_reclaimable": "36652kB",
-      "slab_unreclaim": "15716kB",
-      "page_tables": "8144kB",
+      "anon_pages": "107188kB",
+      "mapped": "65956kB",
+      "slab": "46120kB",
+      "slab_reclaimable": "30044kB",
+      "slab_unreclaim": "16076kB",
+      "page_tables": "8468kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "503444kB",
-      "committed_as": "923140kB",
+      "committed_as": "926608kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "0kB",
       "vmalloc_chunk": "0kB",
@@ -323,7 +323,6 @@
           },
           "state": "up",
           "arp": {
-            "169.254.169.254": "0a:3d:52:e1:67:6e",
             "172.31.32.1": "0a:3d:52:e1:67:6e"
           },
           "routes": [
@@ -364,7 +363,7 @@
             "tx-checksumming": "on",
             "tx-checksum-ipv4": "on",
             "tx-checksum-ip-generic": "off",
-            "tx-checksum-ipv6": "off",
+            "tx-checksum-ipv6": "on",
             "tx-checksum-fcoe-crc": "off",
             "tx-checksum-sctp": "off",
             "scatter-gather": "on",
@@ -374,7 +373,7 @@
             "tx-tcp-segmentation": "on",
             "tx-tcp-ecn-segmentation": "off",
             "tx-tcp-mangleid-segmentation": "off",
-            "tx-tcp6-segmentation": "off",
+            "tx-tcp6-segmentation": "on",
             "udp-fragmentation-offload": "off",
             "generic-segmentation-offload": "on",
             "generic-receive-offload": "on",
@@ -457,16 +456,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "1049474",
-              "packets": "15526",
+              "bytes": "747334",
+              "packets": "5957",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "59304045",
-              "packets": "43872",
+              "bytes": "734779",
+              "packets": "6363",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -487,10 +486,10 @@
     "platform": "amazon",
     "platform_version": "2",
     "platform_family": "amazon",
-    "uptime_seconds": 1073,
-    "uptime": "17 minutes 53 seconds",
-    "idletime_seconds": 1042,
-    "idletime": "17 minutes 22 seconds",
+    "uptime_seconds": 1084,
+    "uptime": "18 minutes 04 seconds",
+    "idletime_seconds": 1037,
+    "idletime": "17 minutes 17 seconds",
     "dmi": {
       "dmidecode_version": "3.0",
       "smbios_version": "2.7",
@@ -649,8 +648,8 @@
       "model": "63",
       "model_name": "Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz",
       "stepping": "2",
-      "mhz": "2400.019",
-      "bogomips": "4800.14",
+      "mhz": "2399.912",
+      "bogomips": "4800.07",
       "hypervisor_vendor": "Xen",
       "virtualization_type": "full",
       "l1d_cache": "32K",
@@ -728,8 +727,8 @@
         "model": "63",
         "model_name": "Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz",
         "stepping": "2",
-        "mhz": "2400.019",
-        "bogomips": "4800.14",
+        "mhz": "2399.912",
+        "bogomips": "4800.07",
         "cache_size": "30720 KB",
         "physical_id": "0",
         "core_id": "0",
@@ -868,7 +867,7 @@
       "events_maintenance_scheduled": "[]",
       "hibernation_configured": "false",
       "hostname": "ip-172-31-37-8.us-east-2.compute.internal",
-      "identity_credentials_ec2_info": "{\n  \"Code\" : \"Success\",\n  \"LastUpdated\" : \"2021-07-02T09:05:06Z\",\n  \"AccountId\" : \"709560788676\"\n}",
+      "identity_credentials_ec2_info": "{\n  \"Code\" : \"Success\",\n  \"LastUpdated\" : \"2021-07-03T14:55:34Z\",\n  \"AccountId\" : \"709560788676\"\n}",
       "instance_action": "none",
       "instance_id": "i-0937d910a91965bde",
       "instance_life_cycle": "on-demand",
@@ -882,14 +881,14 @@
           "device_number": "0",
           "interface_id": "eni-0c8112ab1dca9563d",
           "ipv4-associations": {
-            "3.18.213.54": "172.31.37.8"
+            "3.19.27.249": "172.31.37.8"
           },
           "local_hostname": "ip-172-31-37-8.us-east-2.compute.internal",
           "local_ipv4s": "172.31.37.8",
           "mac": "0a:89:45:31:30:e0",
           "owner_id": "709560788676",
-          "public_hostname": "ec2-3-18-213-54.us-east-2.compute.amazonaws.com",
-          "public_ipv4s": "3.18.213.54",
+          "public_hostname": "ec2-3-19-27-249.us-east-2.compute.amazonaws.com",
+          "public_ipv4s": "3.19.27.249",
           "security_group_ids": "sg-070e14f4749a7cf0f",
           "security_groups": "launch-wizard-5",
           "subnet_id": "subnet-dc6a3290",
@@ -903,8 +902,8 @@
       "placement_availability_zone_id": "use2-az3",
       "placement_region": "us-east-2",
       "profile": "default-hvm",
-      "public_hostname": "ec2-3-18-213-54.us-east-2.compute.amazonaws.com",
-      "public_ipv4": "3.18.213.54",
+      "public_hostname": "ec2-3-19-27-249.us-east-2.compute.amazonaws.com",
+      "public_ipv4": "3.19.27.249",
       "public_keys_0_openssh_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvlKKZcedD65bKvXeWfV40yW64KQi5HwJhEUx1BqkXf+xmS/C2KYBDzuLvHnFHXLmWAqQ/ETuqhHdtGt5Rh555/OzCpHW3e6LwYR6pMUlrKxGIRkFoGEFqebklqrDKGzSOiRrDlr/31PnzON36WaKG6PVPeRzMwPLbs6VuGq4a8yWFIRAgwvnOuCUODi1NwRWAGHvGjZvrcxvj3l+oYefsy4Mk7YempjYclsxqDdBIRhlTuoK8RlgL/aRAKeqfKfk4Pv5nJshol5P+fM1pbc90kfjPHTrI78jx6h2KUzCF4dv6sr+mI4uiflrLLynCSSlqLGMAGlONeRNSVAE4Z/0t 110621\n",
       "reservation_id": "r-00f173a275ed8c02f",
       "security_groups": [
@@ -917,22 +916,22 @@
       "availability_zone": "us-east-2c",
       "region": "us-east-2"
     },
-    "json?": "{\n  \"accountId\" : \"709560788676\",\n  \"architecture\" : \"x86_64\",\n  \"availabilityZone\" : \"us-east-2c\",\n  \"billingProducts\" : null,\n  \"devpayProductCodes\" : null,\n  \"marketplaceProductCodes\" : null,\n  \"imageId\" : \"ami-0277b52859bac6f4b\",\n  \"instanceId\" : \"i-0937d910a91965bde\",\n  \"instanceType\" : \"t2.micro\",\n  \"kernelId\" : null,\n  \"pendingTime\" : \"2021-07-02T09:04:59Z\",\n  \"privateIp\" : \"172.31.37.8\",\n  \"ramdiskId\" : null,\n  \"region\" : \"us-east-2\",\n  \"version\" : \"2017-09-30\"\n}",
+    "json?": "{\n  \"accountId\" : \"709560788676\",\n  \"architecture\" : \"x86_64\",\n  \"availabilityZone\" : \"us-east-2c\",\n  \"billingProducts\" : null,\n  \"devpayProductCodes\" : null,\n  \"marketplaceProductCodes\" : null,\n  \"imageId\" : \"ami-0277b52859bac6f4b\",\n  \"instanceId\" : \"i-0937d910a91965bde\",\n  \"instanceType\" : \"t2.micro\",\n  \"kernelId\" : null,\n  \"pendingTime\" : \"2021-07-03T14:54:33Z\",\n  \"privateIp\" : \"172.31.37.8\",\n  \"ramdiskId\" : null,\n  \"region\" : \"us-east-2\",\n  \"version\" : \"2017-09-30\"\n}",
     "hostname": "ip-172-31-37-8",
     "machinename": "ip-172-31-37-8.us-east-2.compute.internal",
     "fqdn": "ip-172-31-37-8.us-east-2.compute.internal",
     "domain": "us-east-2.compute.internal",
     "cloud": {
       "public_ipv4_addrs": [
-        "3.18.213.54"
+        "3.19.27.249"
       ],
       "local_ipv4_addrs": [
         "172.31.37.8"
       ],
       "provider": "ec2",
-      "public_hostname": "ec2-3-18-213-54.us-east-2.compute.amazonaws.com",
+      "public_hostname": "ec2-3-19-27-249.us-east-2.compute.amazonaws.com",
       "local_hostname": "ip-172-31-37-8.us-east-2.compute.internal",
-      "public_ipv4": "3.18.213.54",
+      "public_ipv4": "3.19.27.249",
       "local_ipv4": "172.31.37.8"
     },
     "command": {
@@ -977,25 +976,24 @@
             "nodev",
             "relatime",
             "size=100692k",
-            "mode=700",
-            "uid=1000",
-            "gid=1000"
+            "mode=700"
           ],
           "mounts": [
             "/dev/shm",
             "/run",
             "/sys/fs/cgroup",
-            "/run/user/1000"
+            "/run/user/1000",
+            "/run/user/0"
           ]
         },
         "/dev/xvda1": {
           "kb_size": "8376300",
-          "kb_used": "2671844",
-          "kb_available": "5704456",
-          "percent_used": "32%",
+          "kb_used": "2718352",
+          "kb_available": "5657948",
+          "percent_used": "33%",
           "total_inodes": "4193216",
-          "inodes_used": "94789",
-          "inodes_available": "4098427",
+          "inodes_used": "96715",
+          "inodes_available": "4096501",
           "inodes_percent_used": "3%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1073,20 +1071,20 @@
             "nodev",
             "noexec",
             "relatime",
-            "perf_event"
+            "freezer"
           ],
           "mounts": [
             "/sys/fs/cgroup/systemd",
             "/sys/fs/cgroup/cpuset",
             "/sys/fs/cgroup/blkio",
+            "/sys/fs/cgroup/hugetlb",
+            "/sys/fs/cgroup/net_cls,net_prio",
             "/sys/fs/cgroup/pids",
             "/sys/fs/cgroup/cpu,cpuacct",
-            "/sys/fs/cgroup/net_cls,net_prio",
-            "/sys/fs/cgroup/hugetlb",
-            "/sys/fs/cgroup/memory",
-            "/sys/fs/cgroup/freezer",
+            "/sys/fs/cgroup/perf_event",
             "/sys/fs/cgroup/devices",
-            "/sys/fs/cgroup/perf_event"
+            "/sys/fs/cgroup/memory",
+            "/sys/fs/cgroup/freezer"
           ]
         },
         "pstore": {
@@ -1107,13 +1105,13 @@
           "mount_options": [
             "rw",
             "relatime",
-            "fd=31",
+            "fd=29",
             "pgrp=1",
             "timeout=0",
             "minproto=5",
             "maxproto=5",
             "direct",
-            "pipe_ino=12315"
+            "pipe_ino=12355"
           ],
           "mounts": [
             "/proc/sys/fs/binfmt_misc"
@@ -1209,12 +1207,12 @@
         },
         "/run": {
           "kb_size": "503444",
-          "kb_used": "428",
-          "kb_available": "503016",
+          "kb_used": "480",
+          "kb_available": "502964",
           "percent_used": "1%",
           "total_inodes": "125861",
-          "inodes_used": "354",
-          "inodes_available": "125507",
+          "inodes_used": "370",
+          "inodes_available": "125491",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1250,12 +1248,12 @@
         },
         "/": {
           "kb_size": "8376300",
-          "kb_used": "2671844",
-          "kb_available": "5704456",
-          "percent_used": "32%",
+          "kb_used": "2718352",
+          "kb_available": "5657948",
+          "percent_used": "33%",
           "total_inodes": "4193216",
-          "inodes_used": "94789",
-          "inodes_available": "4098427",
+          "inodes_used": "96715",
+          "inodes_available": "4096501",
           "inodes_percent_used": "3%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1290,6 +1288,28 @@
             "mode=700",
             "uid=1000",
             "gid=1000"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/run/user/0": {
+          "kb_size": "100692",
+          "kb_used": "0",
+          "kb_available": "100692",
+          "percent_used": "0%",
+          "total_inodes": "125861",
+          "inodes_used": "1",
+          "inodes_available": "125860",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "size=100692k",
+            "mode=700"
           ],
           "devices": [
             "tmpfs"
@@ -1406,6 +1426,35 @@
             "cgroup"
           ]
         },
+        "/sys/fs/cgroup/hugetlb": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "hugetlb"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/net_cls,net_prio": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "net_cls",
+            "net_prio"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
         "/sys/fs/cgroup/pids": {
           "fs_type": "cgroup",
           "mount_options": [
@@ -1435,7 +1484,7 @@
             "cgroup"
           ]
         },
-        "/sys/fs/cgroup/net_cls,net_prio": {
+        "/sys/fs/cgroup/perf_event": {
           "fs_type": "cgroup",
           "mount_options": [
             "rw",
@@ -1443,14 +1492,13 @@
             "nodev",
             "noexec",
             "relatime",
-            "net_cls",
-            "net_prio"
+            "perf_event"
           ],
           "devices": [
             "cgroup"
           ]
         },
-        "/sys/fs/cgroup/hugetlb": {
+        "/sys/fs/cgroup/devices": {
           "fs_type": "cgroup",
           "mount_options": [
             "rw",
@@ -1458,7 +1506,7 @@
             "nodev",
             "noexec",
             "relatime",
-            "hugetlb"
+            "devices"
           ],
           "devices": [
             "cgroup"
@@ -1492,46 +1540,18 @@
             "cgroup"
           ]
         },
-        "/sys/fs/cgroup/devices": {
-          "fs_type": "cgroup",
-          "mount_options": [
-            "rw",
-            "nosuid",
-            "nodev",
-            "noexec",
-            "relatime",
-            "devices"
-          ],
-          "devices": [
-            "cgroup"
-          ]
-        },
-        "/sys/fs/cgroup/perf_event": {
-          "fs_type": "cgroup",
-          "mount_options": [
-            "rw",
-            "nosuid",
-            "nodev",
-            "noexec",
-            "relatime",
-            "perf_event"
-          ],
-          "devices": [
-            "cgroup"
-          ]
-        },
         "/proc/sys/fs/binfmt_misc": {
           "fs_type": "autofs",
           "mount_options": [
             "rw",
             "relatime",
-            "fd=31",
+            "fd=29",
             "pgrp=1",
             "timeout=0",
             "minproto=5",
             "maxproto=5",
             "direct",
-            "pipe_ino=12315"
+            "pipe_ino=12355"
           ],
           "devices": [
             "systemd-1"
@@ -1621,13 +1641,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "503444",
-          "kb_used": "428",
-          "kb_available": "503016",
+          "kb_used": "480",
+          "kb_available": "502964",
           "percent_used": "1%",
           "mount": "/run",
           "total_inodes": "125861",
-          "inodes_used": "354",
-          "inodes_available": "125507",
+          "inodes_used": "370",
+          "inodes_available": "125491",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1660,13 +1680,13 @@
         "/dev/xvda1,/": {
           "device": "/dev/xvda1",
           "kb_size": "8376300",
-          "kb_used": "2671844",
-          "kb_available": "5704456",
-          "percent_used": "32%",
+          "kb_used": "2718352",
+          "kb_available": "5657948",
+          "percent_used": "33%",
           "mount": "/",
           "total_inodes": "4193216",
-          "inodes_used": "94789",
-          "inodes_available": "4098427",
+          "inodes_used": "96715",
+          "inodes_available": "4096501",
           "inodes_percent_used": "3%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1700,6 +1720,27 @@
             "mode=700",
             "uid=1000",
             "gid=1000"
+          ]
+        },
+        "tmpfs,/run/user/0": {
+          "device": "tmpfs",
+          "kb_size": "100692",
+          "kb_used": "0",
+          "kb_available": "100692",
+          "percent_used": "0%",
+          "mount": "/run/user/0",
+          "total_inodes": "125861",
+          "inodes_used": "1",
+          "inodes_available": "125860",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "size=100692k",
+            "mode=700"
           ]
         },
         "sysfs,/sys": {
@@ -1805,6 +1846,33 @@
             "blkio"
           ]
         },
+        "cgroup,/sys/fs/cgroup/hugetlb": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/hugetlb",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "hugetlb"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/net_cls,net_prio": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/net_cls,net_prio",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "net_cls",
+            "net_prio"
+          ]
+        },
         "cgroup,/sys/fs/cgroup/pids": {
           "device": "cgroup",
           "mount": "/sys/fs/cgroup/pids",
@@ -1832,9 +1900,9 @@
             "cpuacct"
           ]
         },
-        "cgroup,/sys/fs/cgroup/net_cls,net_prio": {
+        "cgroup,/sys/fs/cgroup/perf_event": {
           "device": "cgroup",
-          "mount": "/sys/fs/cgroup/net_cls,net_prio",
+          "mount": "/sys/fs/cgroup/perf_event",
           "fs_type": "cgroup",
           "mount_options": [
             "rw",
@@ -1842,13 +1910,12 @@
             "nodev",
             "noexec",
             "relatime",
-            "net_cls",
-            "net_prio"
+            "perf_event"
           ]
         },
-        "cgroup,/sys/fs/cgroup/hugetlb": {
+        "cgroup,/sys/fs/cgroup/devices": {
           "device": "cgroup",
-          "mount": "/sys/fs/cgroup/hugetlb",
+          "mount": "/sys/fs/cgroup/devices",
           "fs_type": "cgroup",
           "mount_options": [
             "rw",
@@ -1856,7 +1923,7 @@
             "nodev",
             "noexec",
             "relatime",
-            "hugetlb"
+            "devices"
           ]
         },
         "cgroup,/sys/fs/cgroup/memory": {
@@ -1885,32 +1952,6 @@
             "freezer"
           ]
         },
-        "cgroup,/sys/fs/cgroup/devices": {
-          "device": "cgroup",
-          "mount": "/sys/fs/cgroup/devices",
-          "fs_type": "cgroup",
-          "mount_options": [
-            "rw",
-            "nosuid",
-            "nodev",
-            "noexec",
-            "relatime",
-            "devices"
-          ]
-        },
-        "cgroup,/sys/fs/cgroup/perf_event": {
-          "device": "cgroup",
-          "mount": "/sys/fs/cgroup/perf_event",
-          "fs_type": "cgroup",
-          "mount_options": [
-            "rw",
-            "nosuid",
-            "nodev",
-            "noexec",
-            "relatime",
-            "perf_event"
-          ]
-        },
         "systemd-1,/proc/sys/fs/binfmt_misc": {
           "device": "systemd-1",
           "mount": "/proc/sys/fs/binfmt_misc",
@@ -1918,13 +1959,13 @@
           "mount_options": [
             "rw",
             "relatime",
-            "fd=31",
+            "fd=29",
             "pgrp=1",
             "timeout=0",
             "minproto=5",
             "maxproto=5",
             "direct",
-            "pipe_ino=12315"
+            "pipe_ino=12355"
           ]
         },
         "hugetlbfs,/dev/hugepages": {
@@ -2003,7 +2044,7 @@
       "icon_name": "computer-vm",
       "chassis": "vm",
       "machine_id": "ec241e799eaf2c0ee222f87da91ab53c",
-      "boot_id": "6c4cffd87e2e40c2ad4caa37975a82fd",
+      "boot_id": "f28e336cc9e54d399c6e672becc3069c",
       "virtualization": "xen",
       "operating_system": "Amazon Linux 2",
       "cpe_os_name": "cpe:2.3:o:amazon:amazon_linux:2",
@@ -2066,7 +2107,7 @@
       "search-state-factory": "/usr/local/share/factory/var",
       "search-configuration": "/root/.config"
     },
-    "ohai_time": 1625217791.6971078,
+    "ohai_time": 1625325175.8936012,
     "packages": {
       "qrencode-libs": {
         "epoch": "0",
@@ -2320,13 +2361,6 @@
         "installdate": "1623894556",
         "arch": "x86_64"
       },
-      "glibc-locale-source": {
-        "epoch": "0",
-        "version": "2.26",
-        "release": "47.amzn2",
-        "installdate": "1623894629",
-        "arch": "x86_64"
-      },
       "libselinux-utils": {
         "epoch": "0",
         "version": "2.5",
@@ -2446,13 +2480,6 @@
         "installdate": "1623894578",
         "arch": "noarch"
       },
-      "dracut": {
-        "epoch": "0",
-        "version": "033",
-        "release": "535.amzn2.1.3",
-        "installdate": "1623894596",
-        "arch": "x86_64"
-      },
       "python-pillow": {
         "epoch": "0",
         "version": "2.0.0",
@@ -2556,13 +2583,6 @@
         "version": "7.61.1",
         "release": "12.amzn2.0.4",
         "installdate": "1623894583",
-        "arch": "x86_64"
-      },
-      "dracut-config-generic": {
-        "epoch": "0",
-        "version": "033",
-        "release": "535.amzn2.1.3",
-        "installdate": "1623894616",
         "arch": "x86_64"
       },
       "util-linux": {
@@ -2775,6 +2795,13 @@
         "installdate": "1623894599",
         "arch": "x86_64"
       },
+      "tzdata": {
+        "epoch": "0",
+        "version": "2021a",
+        "release": "1.amzn2",
+        "installdate": "1625217943",
+        "arch": "noarch"
+      },
       "yum": {
         "epoch": "0",
         "version": "3.4.3",
@@ -2782,11 +2809,25 @@
         "installdate": "1623894600",
         "arch": "noarch"
       },
+      "libcrypt": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "48.amzn2",
+        "installdate": "1625217944",
+        "arch": "x86_64"
+      },
       "openssh": {
         "epoch": "0",
         "version": "7.4p1",
         "release": "21.amzn2.0.3",
         "installdate": "1623894603",
+        "arch": "x86_64"
+      },
+      "dracut": {
+        "epoch": "0",
+        "version": "033",
+        "release": "535.amzn2.1.4",
+        "installdate": "1625217945",
         "arch": "x86_64"
       },
       "gpm-libs": {
@@ -2796,6 +2837,13 @@
         "installdate": "1623894605",
         "arch": "x86_64"
       },
+      "glibc-all-langpacks": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "48.amzn2",
+        "installdate": "1625217948",
+        "arch": "x86_64"
+      },
       "ec2-instance-connect": {
         "epoch": "0",
         "version": "1.1",
@@ -2803,11 +2851,25 @@
         "installdate": "1623894606",
         "arch": "noarch"
       },
+      "amazon-ssm-agent": {
+        "epoch": "0",
+        "version": "3.0.1124.0",
+        "release": "1.amzn2",
+        "installdate": "1625217952",
+        "arch": "x86_64"
+      },
       "yum-langpacks": {
         "epoch": "0",
         "version": "0.4.2",
         "release": "7.amzn2",
         "installdate": "1623894607",
+        "arch": "noarch"
+      },
+      "perl-Error": {
+        "epoch": "1",
+        "version": "0.17020",
+        "release": "2.amzn2",
+        "installdate": "1625218073",
         "arch": "noarch"
       },
       "kernel": {
@@ -3209,13 +3271,6 @@
         "installdate": "1623894601",
         "arch": "x86_64"
       },
-      "amazon-ssm-agent": {
-        "epoch": "0",
-        "version": "3.0.529.0",
-        "release": "1.amzn2",
-        "installdate": "1623894620",
-        "arch": "x86_64"
-      },
       "libsysfs": {
         "epoch": "0",
         "version": "2.1.0",
@@ -3391,13 +3446,6 @@
         "installdate": "1623894626",
         "arch": "noarch"
       },
-      "glibc-all-langpacks": {
-        "epoch": "0",
-        "version": "2.26",
-        "release": "47.amzn2",
-        "installdate": "1623894631",
-        "arch": "x86_64"
-      },
       "screen": {
         "epoch": "0",
         "version": "4.1.0",
@@ -3489,13 +3537,6 @@
         "installdate": "1623894629",
         "arch": "x86_64"
       },
-      "glibc-minimal-langpack": {
-        "epoch": "0",
-        "version": "2.26",
-        "release": "47.amzn2",
-        "installdate": "1623894548",
-        "arch": "x86_64"
-      },
       "rdate": {
         "epoch": "0",
         "version": "1.4",
@@ -3530,13 +3571,6 @@
         "release": "5.amzn2",
         "installdate": "1623894634",
         "arch": "noarch"
-      },
-      "libcrypt": {
-        "epoch": "0",
-        "version": "2.26",
-        "release": "47.amzn2",
-        "installdate": "1623894549",
-        "arch": "x86_64"
       },
       "glib2": {
         "epoch": "0",
@@ -3620,13 +3654,6 @@
         "version": "7.6",
         "release": "77.amzn2.0.2",
         "installdate": "1623894551",
-        "arch": "x86_64"
-      },
-      "libxml2-python": {
-        "epoch": "0",
-        "version": "2.9.1",
-        "release": "6.amzn2.5.3",
-        "installdate": "1623894579",
         "arch": "x86_64"
       },
       "libffi": {
@@ -3769,13 +3796,6 @@
         "installdate": "1623894548",
         "arch": "x86_64"
       },
-      "glibc-common": {
-        "epoch": "0",
-        "version": "2.26",
-        "release": "47.amzn2",
-        "installdate": "1623894548",
-        "arch": "x86_64"
-      },
       "ncurses-libs": {
         "epoch": "0",
         "version": "6.0",
@@ -3829,13 +3849,6 @@
         "epoch": "0",
         "version": "2.20",
         "release": "3.amzn2.0.2",
-        "installdate": "1623894550",
-        "arch": "x86_64"
-      },
-      "libxml2": {
-        "epoch": "0",
-        "version": "2.9.1",
-        "release": "6.amzn2.5.3",
         "installdate": "1623894550",
         "arch": "x86_64"
       },
@@ -4098,11 +4111,25 @@
         "installdate": "1623894554",
         "arch": "noarch"
       },
+      "git-core": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1625218072",
+        "arch": "x86_64"
+      },
       "perl-Text-ParseWords": {
         "epoch": "0",
         "version": "3.29",
         "release": "4.amzn2",
         "installdate": "1623894554",
+        "arch": "noarch"
+      },
+      "emacs-filesystem": {
+        "epoch": "1",
+        "version": "27.1",
+        "release": "1.amzn2.0.1",
+        "installdate": "1625218073",
         "arch": "noarch"
       },
       "perl-macros": {
@@ -4112,12 +4139,26 @@
         "installdate": "1623894554",
         "arch": "x86_64"
       },
+      "perl-TermReadKey": {
+        "epoch": "0",
+        "version": "2.30",
+        "release": "20.amzn2.0.2",
+        "installdate": "1625218073",
+        "arch": "x86_64"
+      },
       "perl-constant": {
         "epoch": "0",
         "version": "1.27",
         "release": "2.amzn2.0.1",
         "installdate": "1623894554",
         "arch": "noarch"
+      },
+      "git": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1625218073",
+        "arch": "x86_64"
       },
       "perl-Carp": {
         "epoch": "0",
@@ -4455,13 +4496,6 @@
         "installdate": "1624791730",
         "arch": "x86_64"
       },
-      "httpd-tools": {
-        "epoch": "0",
-        "version": "2.4.46",
-        "release": "2.amzn2",
-        "installdate": "1624791730",
-        "arch": "x86_64"
-      },
       "generic-logos-httpd": {
         "epoch": "0",
         "version": "18.0.0",
@@ -4469,11 +4503,67 @@
         "installdate": "1624791730",
         "arch": "noarch"
       },
+      "httpd-filesystem": {
+        "epoch": "0",
+        "version": "2.4.48",
+        "release": "2.amzn2",
+        "installdate": "1625217943",
+        "arch": "noarch"
+      },
+      "glibc-minimal-langpack": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "48.amzn2",
+        "installdate": "1625217943",
+        "arch": "x86_64"
+      },
+      "glibc-common": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "48.amzn2",
+        "installdate": "1625217944",
+        "arch": "x86_64"
+      },
+      "httpd-tools": {
+        "epoch": "0",
+        "version": "2.4.48",
+        "release": "2.amzn2",
+        "installdate": "1625217944",
+        "arch": "x86_64"
+      },
       "mod_http2": {
         "epoch": "0",
-        "version": "1.15.14",
-        "release": "2.amzn2",
-        "installdate": "1624791730",
+        "version": "1.15.19",
+        "release": "1.amzn2.0.1",
+        "installdate": "1625217945",
+        "arch": "x86_64"
+      },
+      "libxml2": {
+        "epoch": "0",
+        "version": "2.9.1",
+        "release": "6.amzn2.5.4",
+        "installdate": "1625217945",
+        "arch": "x86_64"
+      },
+      "dracut-config-generic": {
+        "epoch": "0",
+        "version": "033",
+        "release": "535.amzn2.1.4",
+        "installdate": "1625217945",
+        "arch": "x86_64"
+      },
+      "glibc-locale-source": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "48.amzn2",
+        "installdate": "1625217948",
+        "arch": "x86_64"
+      },
+      "systemtap-runtime": {
+        "epoch": "0",
+        "version": "4.4",
+        "release": "1.amzn2.0.1",
+        "installdate": "1625217948",
         "arch": "x86_64"
       },
       "sgpio": {
@@ -4482,13 +4572,6 @@
         "release": "13.amzn2.0.1",
         "installdate": "1623894560",
         "arch": "x86_64"
-      },
-      "tzdata": {
-        "epoch": "0",
-        "version": "2020d",
-        "release": "2.amzn2",
-        "installdate": "1623894547",
-        "arch": "noarch"
       },
       "json-c": {
         "epoch": "0",
@@ -4509,13 +4592,6 @@
         "version": "3.0",
         "release": "5.amzn2.0.2",
         "installdate": "1623894561",
-        "arch": "x86_64"
-      },
-      "glibc": {
-        "epoch": "0",
-        "version": "2.26",
-        "release": "47.amzn2",
-        "installdate": "1623894549",
         "arch": "x86_64"
       },
       "p11-kit-trust": {
@@ -4672,13 +4748,6 @@
         "installdate": "1623894554",
         "arch": "noarch"
       },
-      "systemtap-runtime": {
-        "epoch": "0",
-        "version": "4.2",
-        "release": "1.amzn2.0.1",
-        "installdate": "1623894624",
-        "arch": "x86_64"
-      },
       "perl-libs": {
         "epoch": "4",
         "version": "5.16.3",
@@ -4762,13 +4831,6 @@
         "release": "0.2.20140510svn7747.amzn2",
         "installdate": "1623894580",
         "arch": "noarch"
-      },
-      "libwebp": {
-        "epoch": "0",
-        "version": "0.3.0",
-        "release": "7.amzn2",
-        "installdate": "1623894560",
-        "arch": "x86_64"
       },
       "python-backports-ssl_match_hostname": {
         "epoch": "0",
@@ -5176,25 +5238,11 @@
         "installdate": "1623894599",
         "arch": "x86_64"
       },
-      "httpd-filesystem": {
-        "epoch": "0",
-        "version": "2.4.46",
-        "release": "2.amzn2",
-        "installdate": "1624791730",
-        "arch": "noarch"
-      },
       "plymouth-scripts": {
         "epoch": "0",
         "version": "0.8.9",
         "release": "0.28.20140113.amzn2.0.2",
         "installdate": "1623894599",
-        "arch": "x86_64"
-      },
-      "httpd": {
-        "epoch": "0",
-        "version": "2.4.46",
-        "release": "2.amzn2",
-        "installdate": "1624791730",
         "arch": "x86_64"
       },
       "python-pycurl": {
@@ -5204,11 +5252,25 @@
         "installdate": "1623894599",
         "arch": "x86_64"
       },
+      "glibc": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "48.amzn2",
+        "installdate": "1625217944",
+        "arch": "x86_64"
+      },
       "fipscheck-lib": {
         "epoch": "0",
         "version": "1.4.1",
         "release": "6.amzn2.0.2",
         "installdate": "1623894601",
+        "arch": "x86_64"
+      },
+      "httpd": {
+        "epoch": "0",
+        "version": "2.4.48",
+        "release": "2.amzn2",
+        "installdate": "1625217945",
         "arch": "x86_64"
       },
       "libsss_idmap": {
@@ -5218,11 +5280,25 @@
         "installdate": "1623894605",
         "arch": "x86_64"
       },
+      "libxml2-python": {
+        "epoch": "0",
+        "version": "2.9.1",
+        "release": "6.amzn2.5.4",
+        "installdate": "1625217945",
+        "arch": "x86_64"
+      },
       "rng-tools": {
         "epoch": "0",
         "version": "6.8",
         "release": "3.amzn2.0.5",
         "installdate": "1623894605",
+        "arch": "x86_64"
+      },
+      "libwebp": {
+        "epoch": "0",
+        "version": "0.3.0",
+        "release": "10.amzn2",
+        "installdate": "1625217948",
         "arch": "x86_64"
       },
       "postfix": {
@@ -5232,11 +5308,25 @@
         "installdate": "1623894606",
         "arch": "x86_64"
       },
+      "git-core-doc": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1625218073",
+        "arch": "noarch"
+      },
       "cloud-init": {
         "epoch": "0",
         "version": "19.3",
         "release": "44.amzn2",
         "installdate": "1623894607",
+        "arch": "noarch"
+      },
+      "perl-Git": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1625218073",
         "arch": "noarch"
       },
       "selinux-policy-targeted": {
@@ -5363,7 +5453,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 91370,
+      "_AVPHYS_PAGES": 146274,
       "_NPROCESSORS_CONF": 1,
       "_NPROCESSORS_ONLN": 1,
       "_PHYS_PAGES": 251723,
@@ -5628,10 +5718,18 @@
     "name": "ip-172-31-37-8.us-east-2.compute.internal",
     "chef_environment": "_default",
     "recipes": [
-      "test-cookbook::test-recipe"
+      "test-cookbook",
+      "test-cookbook::default",
+      "apache-cookbook",
+      "apache-cookbook::default",
+      "test-cookbook::test-recipe",
+      "test-cookbook::test2-recipe",
+      "apache-cookbook::apache-recipe",
+      "apache-cookbook::apache2-recipe"
     ],
     "expanded_run_list": [
-      "test-cookbook::test-recipe"
+      "test-cookbook::default",
+      "apache-cookbook::default"
     ],
     "roles": [
 
@@ -5639,10 +5737,14 @@
     "cookbooks": {
       "test-cookbook": {
         "version": "0.1.0"
+      },
+      "apache-cookbook": {
+        "version": "0.1.0"
       }
     }
   },
   "run_list": [
-    "recipe[test-cookbook::test-recipe]"
+    "recipe[test-cookbook::default]",
+    "recipe[apache-cookbook::default]"
   ]
 }
